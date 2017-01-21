@@ -66,7 +66,7 @@ header {
     right:0;
 }
 
-.icons {
+.iconsHeader{
     height: 32px;
     width: 32px;
     margin-left: 12px;
@@ -81,6 +81,7 @@ header {
     font-family: 'Lobster Two', sans-serif;
     font-size: 60px;
     color: white;
+    opacity: 1.0;
     display: inline;
 }
 
@@ -88,6 +89,7 @@ header {
     font-family: 'Roboto', 'sans-serif';
     font-size: 24;
     color: white;
+    opacity: 1.0;
 }
 
 #navBar {
@@ -101,6 +103,7 @@ header {
     display: inline;
     margin-left: 10px;
     float: right;
+    opacity: 1.0;
 }
 
 .primaryNavItems {
@@ -132,7 +135,7 @@ header {
     opacity: 0.5;
 }
 .container {
-/*    background-color: blue;*/ /*can turn on if need to see*/
+    /*    background-color: blue;*/ /*can turn on if need to see*/
     width: 1055px;
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
@@ -183,7 +186,7 @@ header {
     background-color: #C5C5C5;
     height: 200px;
     width: 100%;
-/*    position: absolute;*/
+    /*    position: absolute;*/
 }
 
 #backToTop {
@@ -197,7 +200,7 @@ header {
     background-color: #C51162;
     height: 100px;
     width: 100%;
-/*    position: absolute;*/
+    /*    position: absolute;*/
 }
 
 #footer {
@@ -343,4 +346,63 @@ button {
 
 .projectimg {
     width: 100%;
+}
+
+/*CONTACT PAGE*/
+form {
+    margin: 0 auot;
+    width: 100%;
+}
+
+form div {
+    margin-top: 1em;
+}
+
+input, textarea {
+    font: 13px 'Lato', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #bdbdbd;
+}
+
+input {
+    height: 3em;
+    padding: 0 1em;
+}
+
+textarea {
+    height: 91px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1em 1em;
+    resize: vertical;
+}
+
+#content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.contactbox {
+    width: 80%;
+    margin: 0 auto;
+    padding: 72px 0;
+    height: 20em;
+}
+
+.findme {
+    width: 1044px;
+    height: 100%;
+    position: relative;
+}
+
+#findMeAtContainer {
+    position:absolute;
+    left:0;
+}
+
+.iconsContact {
+    height: 32px;
+    width: 32px;
+    margin-right: 12px;
 }
