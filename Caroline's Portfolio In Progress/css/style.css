@@ -406,3 +406,23 @@ textarea {
     width: 32px;
     margin-right: 12px;
 }
+
+#aboutbox {
+    min-height: 100%;
+}
+
+#aboutimg {
+    width: 33.3%;
+    float: left;
+}
+
+#caropic {
+    width: 100%;
+}
+
+#abouttxt {
+    width: calc(66.6% - 32px);
+    float: left;
+    height: 100%;
+    margin-left: 32px;
+}
