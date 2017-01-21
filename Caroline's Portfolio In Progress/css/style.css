@@ -1,0 +1,346 @@
+body, html, header {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #C9135C;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 24px 0 24px 0;
+    line-height: 20px;
+}
+
+#designWorkBackground img {
+    max-height: 83%;
+    max-width: 83%;     /*Percentage = ((.project height)-20-16)/(.project height)   20 is space between image and text and 16 is size of the image caption*/
+    margin-left: 8.5%;
+}
+
+#gameDesignBackground img {
+    max-height: 83%;
+    max-width: 83%;     /*Percentage = ((.project height)-20-16)/(.project height)   20 is space between image and text and 16 is size of the image caption*/
+    margin-left: 8.5%;
+}
+
+/* HEADER */
+header {
+    overflow: auto;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    background: url("/images/header_waves.svg") #00bcd4 no-repeat left top; /* Image isnt showing.*/
+    background-size: 100%;
+    background-position: 0 0;
+}
+
+#navside {
+    display: none;
+}
+
+#headerContainerFull {
+    width: 1044px;
+    height: 400px;      /* Needs to match header's height*/
+    margin-left: calc(50% - 512px);
+    margin-right: calc(50% - 543px);
+    position: relative;
+    background-image: imageurl("/")
+}
+
+#headerContainerCollapsed {
+    width: 1044px;
+    height: 100px;      /* Needs to match header's height*/
+    margin-left: calc(50% - 512px);
+    margin-right: calc(50% - 543px);
+    position: fixed;
+    background-color: aliceblue; /*Only here to show what collapsed positioning after js is implemented to change header's height when we collapse*/
+}
+
+#iconContainer {
+    position:absolute;
+    right:0;
+}
+
+.icons {
+    height: 32px;
+    width: 32px;
+    margin-left: 12px;
+}
+
+#logoContainer {
+    position: absolute;
+    bottom: 0px;
+}
+
+#logo {
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 60px;
+    color: white;
+    display: inline;
+}
+
+#sub-logo {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 24;
+    color: white;
+}
+
+#navBar {
+    display: inline;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.primaryNav {
+    display: inline;
+    margin-left: 10px;
+    float: right;
+}
+
+.primaryNavItems {
+    color: white;
+}
+
+.primaryNavItems:hover {
+    font-size: 24px;
+    font-weight: bold;
+}
+/* MAIN */
+#designWorkBackground {
+    background-color:#FFFFFF;
+    width: 100%;
+    overflow: auto;
+}
+#gameDesignBackground {
+    clear: both;        /* Need otherwise unless each row above is filled, project wont start on left, try commenting out to see what I mean.*/
+    background-color:#EDEDED;
+    width: 100%;
+    overflow:auto;
+}
+
+.sectionHead {
+    font-weight: lighter;
+    font-size: 36px;
+    font-family: 'Roboto', 'sans-serif';
+    color: black;
+    opacity: 0.5;
+}
+.container {
+/*    background-color: blue;*/ /*can turn on if need to see*/
+    width: 1055px;
+    margin-left: calc(50% - 512px);
+    margin-right: calc(50% - 543px);
+    padding-top: 48px;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+.projects{
+    background-color: green;
+    width: calc(33.33% - 31px);
+    float: left;
+    margin-right: 31px;
+    margin-bottom: 48px;
+    overflow: auto;
+}
+
+.projectTitle {
+    color: #FF4081;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.imageCaption {
+    color: black;
+    opacity: 0.5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 800px){
+    .projects{
+        width: calc(50% - 31px);
+    }
+}
+@media only screen and (max-width: 450px){
+    .projects{
+        width: calc(100% - 31px);
+    }
+}
+
+/* Footer */
+#backToTopContainer {
+    clear: both;
+    background-color: #C5C5C5;
+    height: 200px;
+    width: 100%;
+/*    position: absolute;*/
+}
+
+#backToTop {
+    margin-left: calc(50% - 512px);
+    margin-right: calc(50% - 543px);
+    position: relative;
+    top: 50%;
+}
+
+#footerContainer {
+    background-color: #C51162;
+    height: 100px;
+    width: 100%;
+/*    position: absolute;*/
+}
+
+#footer {
+    margin-left: calc(50% - 512px);
+    margin-right: calc(50% - 543px);
+    position: relative;
+    top: 50%;
+}
+#copyright {
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #018CB1;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 54px;
+    margin: 72px 0 0 0;
+
+}
+
+.sH1_large {
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0.6;
+    line-height: 20px;
+    margin: 16px 0 24px 0;
+}
+
+h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #018CB1;
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 0.8;
+    line-height: 40px;
+    margin: 64px 0 24px 0;
+}
+
+h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    color: #018CB1;
+    font-weight: bold;
+    font-size: 26px;
+    opacity: 0.6;
+    line-height: 40px;
+    margin: 48px 0 24px 0;
+}
+
+h4 {
+    font-family: 'Roboto Slab', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+p {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+li {
+    font-size: 20px;
+    opacity: 0.7;
+    line-height: 32px;
+}
+
+/* PROJECTS */
+.projectwhite {
+    background-color: white;
+}
+
+.projectwhite .container {
+    background-color: white;
+}
+
+.projectgray {
+    background-color: #EDEDED;
+}
+
+.projectgray .container {
+    background-color: #EDEDED;
+}
+
+.projectblue {
+    background-color: #D9EDF2;
+}
+
+.projectblue .container {
+    background-color: #D9EDF2;
+}
+
+.third {
+    width: 33%;
+    display: inline-block;
+    background-color: yellow;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.twothird {
+    width: calc(66.6% - 32px);
+    display: inline-block;
+    background-color: orange;
+    margin: 0 15px 0 15px;
+    vertical-align: top;
+}
+
+.half {
+    width: calc(50% - 32px);
+    float: left;
+    background-color: pink;
+    margin: 0 15px 0 15px;
+}
+
+.callout {
+    background: #D9EDF2;
+    padding: 4px 20px 4px 20px;
+}
+
+button {
+    background-color: #FF4081;
+    color: white;
+    border-radius: 25px;
+    padding: 12px 32px 12px 32px;
+    border: 0px;
+    font-size: 20px;
+}
+
+.row {
+    display: block;
+    clear: both;
+    padding: 24px 0 24px 0;
+}
+
+.projectimg {
+    width: 100%;
+}

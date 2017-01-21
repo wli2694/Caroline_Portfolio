@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="566px" viewBox="0 0 1440 566" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>header_waves_big</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="566"></rect>
+        <linearGradient x1="0%" y1="57.7789426%" x2="100%" y2="58.9230001%" id="linearGradient-3">
+            <stop stop-color="#00BCD4" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="49.4699436%"></stop>
+            <stop stop-color="#00BCD4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="47.8256537%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#00BCD4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.0959196%" y1="100%" x2="46.0959196%" y2="58.8899985%" id="linearGradient-5">
+            <stop stop-color="#00BCD4" offset="0%"></stop>
+            <stop stop-color="#00BCD4" stop-opacity="0.762879303" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="header_waves_big" sketch:type="MSArtboardGroup">
+            <g id="wavy-background-copy" sketch:type="MSLayerGroup">
+                <mask id="mask-2" sketch:name="Mask" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <path d="M0,-153.164062 C0,-153.164062 218.504687,-132.898438 391.725,14.1484375 C564.945312,161.195312 746.320312,241.585938 901.679688,97.1953125 C1057.03906,-47.1953125 1300.28906,-153.164062 1440,-153.164062 L1440,566 L4.79616347e-13,566 L0,-153.164062 Z" id="Path-128" opacity="0.797982743" fill="url(#linearGradient-3)" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M4.41094642e-07,5.68434189e-14 C4.41094642e-07,5.68434189e-14 141.59375,-6.5546875 304.007812,115.34375 C466.421875,237.242188 708.225,302.15625 905.41875,192.601563 C1102.6125,83.046875 1181.17969,46.1562515 1440,26.085938 L1440,228.906247 C1188.57812,192.601559 1075.3625,235.789066 782.634375,321.578125 C489.90625,407.367184 362.328125,242.585934 4.41094642e-07,211.328122 C-5.51368251e-07,172.226559 4.41094642e-07,5.68434189e-14 4.41094642e-07,5.68434189e-14 Z" id="Path-128-Copy-2" opacity="0.797982743" fill="url(#linearGradient-4)" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M0,33.2578157 C0,33.2578157 120.492188,130.717368 345.429688,33.2578157 C570.367188,-64.201737 642.929687,-73.8687455 903.304688,48.0982751 C1163.67969,170.065296 1243.34375,115.318982 1440,-25.2853911 L1440,565.999983 L0,565.999983 L0,33.2578157 Z" id="Path-126-Copy" opacity="0.39791278" fill="#00BCD4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M0,137.375 C0,137.375 120.757813,186.773437 345.695312,137.375 C570.632812,87.9765625 642.929687,102.117184 903.304688,163.937499 C1163.67969,225.757813 1243.34375,198.009047 1440,126.742187 L1440,566.000002 L0,566.000002 L0,137.375 Z" id="Path-126" opacity="0.598647388" fill="#00BCD4" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M0.757905462,144 C443.546875,144 448.507813,518.878723 1440,518.878722 L1440,566.4375 L1.81188398e-13,566.4375 C1.81188398e-13,566.4375 3.41060513e-13,245.444557 0.757905462,144 Z" id="Path-180-Copy" fill="url(#linearGradient-5)" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
