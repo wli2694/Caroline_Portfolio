@@ -1,7 +1,7 @@
 body, html, header {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -45,7 +45,7 @@ header {
 
 #headerContainerFull {
     width: 1044px;
-    height: 400px;      /* Needs to match header's height*/
+    height: 400px;      /* Needs to match header"s height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
     position: relative;
@@ -54,11 +54,11 @@ header {
 
 #headerContainerCollapsed {
     width: 1044px;
-    height: 100px;      /* Needs to match header's height*/
+    height: 100px;      /* Needs to match header"s height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
     position: fixed;
-    background-color: aliceblue; /*Only here to show what collapsed positioning after js is implemented to change header's height when we collapse*/
+    background-color: aliceblue; /*Only here to show what collapsed positioning after js is implemented to change header"s height when we collapse*/
 }
 
 #iconContainer {
@@ -78,7 +78,7 @@ header {
 }
 
 #logo {
-    font-family: 'Lobster Two', sans-serif;
+    font-family: "Lobster Two", sans-serif;
     font-size: 60px;
     color: white;
     opacity: 1.0;
@@ -86,7 +86,7 @@ header {
 }
 
 #sub-logo {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: "Roboto", "sans-serif";
     font-size: 24;
     color: white;
     opacity: 1.0;
@@ -130,7 +130,7 @@ header {
 .sectionHead {
     font-weight: lighter;
     font-size: 36px;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: "Roboto", "sans-serif";
     color: black;
     opacity: 0.5;
 }
@@ -155,7 +155,7 @@ header {
 
 .projectTitle {
     color: #FF4081;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     font-weight: 500;
 }
@@ -163,7 +163,7 @@ header {
 .imageCaption {
     color: black;
     opacity: 0.5;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
 @media only screen and (max-width: 1200px){
@@ -217,7 +217,7 @@ header {
 
 /* TYPOGRAPHY */
 h1 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     color: #018CB1;
     font-weight: bold;
     font-size: 54px;
@@ -227,7 +227,7 @@ h1 {
 }
 
 .sH1_large {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     color: black;
     font-weight: bold;
     font-size: 20px;
@@ -237,7 +237,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     color: #018CB1;
     font-weight: bold;
     font-size: 40px;
@@ -247,7 +247,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     color: #018CB1;
     font-weight: bold;
     font-size: 26px;
@@ -257,7 +257,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     color: black;
     font-weight: bold;
     font-size: 22px;
@@ -359,7 +359,7 @@ form div {
 }
 
 input, textarea {
-    font: 13px 'Lato', sans-serif;
+    font: 13px "Lato", sans-serif;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #bdbdbd;
