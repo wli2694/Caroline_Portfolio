@@ -426,3 +426,9 @@ textarea {
     height: 100%;
     margin-left: 32px;
 }
+
+#artBackground {
+    background-color:#FFFFFF;
+    width: 100%;
+    overflow: auto;
+}
