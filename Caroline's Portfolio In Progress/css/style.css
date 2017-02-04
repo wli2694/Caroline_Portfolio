@@ -67,12 +67,13 @@ header {
 #iconContainer {
     position:absolute;
     right:0;
+    margin-top: 48px;
 }
 
 .iconsHeader{
     height: 32px;
     width: 32px;
-    margin-left: 12px;
+    margin-left: 18px;
 }
 
 #logoContainer {
@@ -93,6 +94,8 @@ header {
     font-size: 24;
     color: white;
     opacity: 1.0;
+    margin-top: 20px;
+    margin-bottom: 48px;
 }
 
 #navBar {
@@ -100,11 +103,12 @@ header {
     position: absolute;
     right: 0px;
     bottom: 0px;
+    margin-bottom: 48px;
 }
 
 .primaryNav {
     display: inline;
-    margin-left: 10px;
+    margin-left: 24px;
     float: right;
     opacity: 1.0;
 }
@@ -412,7 +416,7 @@ textarea {
 .iconsContact {
     height: 32px;
     width: 32px;
-    margin-right: 12px;
+    margin-right: 18px;
 }
 
 #aboutbox {
