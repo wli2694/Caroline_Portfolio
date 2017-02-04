@@ -24,6 +24,12 @@ a {
     margin-left: 8.5%;
 }
 
+#artBackground img {
+    max-height: 83%;
+    max-width: 83%;     /*Percentage = ((.project height)-20-16)/(.project height)   20 is space between image and text and 16 is size of the image caption*/
+    margin-left: 8.5%;
+}
+
 /* HEADER */
 header {
     overflow: auto;
@@ -115,7 +121,7 @@ header {
     font-weight: bold;
 }
 /* MAIN */
-#designWorkBackground {
+#whiteBackground {
     background-color:#FFFFFF;
     width: 100%;
     overflow: auto;
@@ -145,7 +151,7 @@ header {
 }
 
 .projects{
-    background-color: green;
+/*    background-color: green;*/
     width: calc(33.33% - 31px);
     float: left;
     margin-right: 31px;
@@ -428,6 +434,7 @@ textarea {
 }
 
 #artBackground {
+    clear: both;        /* Need otherwise unless each row above is filled, project wont start on left, try commenting out to see what I mean.*/
     background-color:#FFFFFF;
     width: 100%;
     overflow: auto;
