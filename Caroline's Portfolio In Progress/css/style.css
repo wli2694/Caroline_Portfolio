@@ -309,7 +309,7 @@ li {
 .third {
     width: 33%;
     display: inline-block;
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 0;
     vertical-align: top;
     box-sizing: border-box;
@@ -318,7 +318,7 @@ li {
 .twothird {
     width: calc(66.6% - 32px);
     display: inline-block;
-    background-color: orange;
+    /* background-color: orange; */
     margin: 0 15px 0 15px;
     vertical-align: top;
 }
@@ -326,7 +326,7 @@ li {
 .half {
     width: calc(50% - 32px);
     float: left;
-    background-color: pink;
+    /* background-color: pink; */
     margin: 0 15px 0 15px;
 }
 
