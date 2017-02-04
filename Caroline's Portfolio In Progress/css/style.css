@@ -14,20 +14,17 @@ a {
 
 #designWorkBackground img {
     max-height: 83%;
-    max-width: 83%;     /*Percentage = ((.project height)-20-16)/(.project height)   20 is space between image and text and 16 is size of the image caption*/
-    margin-left: 8.5%;
+    max-width: 100%;
 }
 
 #gameDesignBackground img {
     max-height: 83%;
-    max-width: 83%;     /*Percentage = ((.project height)-20-16)/(.project height)   20 is space between image and text and 16 is size of the image caption*/
-    margin-left: 8.5%;
+    max-width: 100%;
 }
 
 #artBackground img {
     max-height: 83%;
-    max-width: 83%;     /*Percentage = ((.project height)-20-16)/(.project height)   20 is space between image and text and 16 is size of the image caption*/
-    margin-left: 8.5%;
+    max-width: 100%;
 }
 
 /* HEADER */
