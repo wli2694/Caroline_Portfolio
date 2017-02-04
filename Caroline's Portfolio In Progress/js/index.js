@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //Design section
     var design = $("#designWork");
-    var designProjectCode = '<a href="%designLink%.html"><div class = "projects"><img src="images/%designImage%.png"><p class ="projectTitle">%designTitle%</p><p>%designDesc%</p><p class = "imageCaption">%designDate%</p></div></a>';
+    var designProjectCode = '<a href="%designLink%.html"><div class = "projects"><img src="images/%designImage%.png"><p class ="projectTitle">%designTitle%</p><p class = "descText">%designDesc%</p><p class = "imageCaption">%designDate%</p></div></a>';
 
     var designLink = "%designLink%";
     var designImage = "%designImage%";
@@ -113,7 +113,7 @@ $(document).ready(function () {
 
     //Game section
     var game = $("#gameWork");
-    var gameProjectCode = '<a href="%gameLink%.html"><div class = "projects"><img src="images/%gameImage%.png"><p class ="projectTitle">%gameTitle%</p><p>%gameDesc%</p><p class = "imageCaption">%gameDate%</p></div></a>';
+    var gameProjectCode = '<a href="%gameLink%.html"><div class = "projects"><img src="images/%gameImage%.png"><p class ="projectTitle">%gameTitle%</p><p class = "descText">%gameDesc%</p><p class = "imageCaption">%gameDate%</p></div></a>';
 
     var gameLink = "%gameLink%";
     var gameImage = "%gameImage%";
@@ -153,7 +153,7 @@ $(document).ready(function () {
 
     //Art section
     var art = $("#artWork");
-    var artProjectCode = '<a href="%artLink%.html"><div class = "projects"><img src="images/%artImage%.png"><p class ="projectTitle">%artTitle%</p><p>%artDesc%</p></div></a>';
+    var artProjectCode = '<a href="%artLink%.html"><div class = "projects"><img src="images/%artImage%.png"><p class ="projectTitle">%artTitle%</p><p class = "descText">%artDesc%</p></div></a>';
 
     var artLink = "%artLink%";
     var artImage = "%artImage%";
