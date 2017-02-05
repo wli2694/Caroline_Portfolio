@@ -35,7 +35,7 @@
                     <!-- FIND ME AT END -->
 
                     <!-- FORM START -->
-                    <form method ='post' name = 'sendMeMessage' action="sendMessage.php">
+                    <form method ='post' id = "sendMessage" name = 'sendMeMessage' action="sendMessage.php">
                         <h3>Send me a message!</h3>
                         <div>
                             <input type = "text" name = "name" placeholder = "Name">
@@ -47,9 +47,10 @@
                             <textarea name = "msg" placeholder = "Message"></textarea>
                         </div>
                         <div class = "formbtn" style = "float: right;">
-                            <button type = "submit" name="sendMessage">Send Message</button>
+                            <button type = "submit" id="sendMessage" onclick = "submitMessage();">Send Message</button>
                         </div>
                     </form>
+                    <div id = "thankYou"></div>
                     <!-- FORM END -->
                 </div>
             </div>
@@ -63,5 +64,7 @@
 -->
         <script src="js/index.js"></script>
         <script src="js/common.js"?></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/contact.js"?></script>
     </body>
 </html>

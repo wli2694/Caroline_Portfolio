@@ -2,13 +2,13 @@
 if(isset($_POST['sendMessage'])) {
     $to = 'williamli15@yahoo.com';
     $name = $_POST['name'];
-    $subject = 'Message from website.';
+    $subject = 'Message from website!';
     $email = $_POST['email'];
     $message = $_POST['msg'];
-    $final_message = "{$name}:\r\n{$message}";
+    $final_message = "Name:{$name}\r\nEmail::{$email}\r\nMessage:{$message}";
 
     mail($to, $subject, $final_message);
-
-    echo "Thanks for your message!";
+    
+    echo "<h1>Email sent successfully</h1>";
 }
 ?> 
