@@ -35,19 +35,19 @@
                     <!-- FIND ME AT END -->
 
                     <!-- FORM START -->
-                    <form>
+                    <form method ='post' name = 'sendMeMessage' action="sendMessage.php">
                         <h3>Send me a message!</h3>
                         <div>
-                            <input type = "text" id = "name" placeholder = "Name">
+                            <input type = "text" name = "name" placeholder = "Name">
                         </div>
                         <div>
-                            <input type = "email" id = "mail" placeholder = "E-mail">
+                            <input type = "email" name = "email" placeholder = "E-mail">
                         </div>
                         <div>
-                            <textarea id = "msg" placeholder = "Message"></textarea>
+                            <textarea name = "msg" placeholder = "Message"></textarea>
                         </div>
                         <div class = "formbtn" style = "float: right;">
-                            <button type = "submit">Send Message</button>
+                            <button type = "submit" name="sendMessage">Send Message</button>
                         </div>
                     </form>
                     <!-- FORM END -->
