@@ -41,10 +41,10 @@ $(document).ready(function () {
             "description" : "Search and collaboration tools for academics",
             "dates" : "Sept - Nov 2016"
         }, {
-            "link" : "type2diabetes",
-            "image" : "type2diabetes",
-            "title" : "Type 2 Diabetes Education",
-            "description" : "Co-participatory design to improve lives of Type 2 diabetes patients",
+            "link" : "T1Diabetes",
+            "image" : "T1Diabetes",
+            "title" : "Type 1 Diabetes Education",
+            "description" : "Co-participatory design to improve lives of Type 1 diabetes patients",
             "dates" : "Jan- May 2016"
         }, {
             "link" : "whatisux",
@@ -71,7 +71,7 @@ $(document).ready(function () {
             "description" : "Type 1 Diabetes management app created in OH/IO Hackathon",
             "dates" : "November 2015"
         }, {
-            "link" : "virtualhealthcoach",
+            "link" : "VHC",
             "image" : "virtualhealthcoach",
             "title" : "Virtual Health Coach",
             "description" : "Web app that guides patients in creating and reaching health goals",
@@ -188,4 +188,3 @@ $(document).ready(function () {
     }
     artProjects.display();
 })
-
