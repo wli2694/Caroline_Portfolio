@@ -9,6 +9,6 @@ if(isset($_POST['sendMessage'])) {
 
     mail($to, $subject, $final_message);
     
-    echo "<h1>Email sent successfully</h1>";
+    header("Location: http://carolinewin.com/contact.html");
 }
 ?> 
