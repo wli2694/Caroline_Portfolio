@@ -14,7 +14,7 @@ $(document).ready(function () {
             "link" : "eaton",
             "image" : "eaton",
             "title" : "Eaton Power Management",
-            "description" : "HCI capstone project",
+            "description" : "HCI capstone project to envision the future of interacting with switchgear",
             "dates" : "Jan - Aug 2017"
         }, {
             "link" : "carma",
@@ -88,13 +88,13 @@ $(document).ready(function () {
             "title" : "Telemedicine Website",
             "description" : "Informational website for physician's virtual clinic",
             "dates" : "Sept - Nov 2015"
-        }, {
+        }, /* {
             "link" : "timebank",
             "image" : "timebank",
             "title" : "Timebank App",
             "description" : "Mobile app that allows people to share skills & expertise",
             "dates" : "June - Sept 2015"
-        }, {
+        },*/ {
             "link" : "ridesouthla",
             "image" : "ridesouthla",
             "title" : "Ride South LA",

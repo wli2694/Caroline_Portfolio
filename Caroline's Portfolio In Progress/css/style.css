@@ -1,8 +1,8 @@
 body, html, header {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
-    overflow-x: hidden; 
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -242,7 +242,7 @@ header {
         font-size: 20px;
     }
     .descText {
-        font-size: 16px;
+        font-size: 14px;
     }
     .imageCaption {
         font-size: 12px;
@@ -309,7 +309,7 @@ h1 {
     font-family: "Roboto Slab", sans-serif;
     color: #018CB1;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 44px;
     line-height: 48px;
     margin: 24px 0 0 0;
 
@@ -317,12 +317,12 @@ h1 {
 
 .sH1_large {
     font-family: "Roboto Slab", sans-serif;
-    color: black;
+    color: #018CB1;
     font-weight: bold;
-    font-size: 20px;
-    opacity: 0.6;
+    font-size: 18px;
+    opacity: 0.7;
     line-height: 20px;
-    margin: 16px 0 24px 0;
+    margin: 16px 0 40px 0;
 }
 
 h2 {
@@ -332,7 +332,7 @@ h2 {
     font-size: 36px;
     opacity: 0.8;
     line-height: 40px;
-    margin: 24px 0 24px 0;
+    margin: 0 0 24px 0;
 }
 
 h3 {
@@ -342,7 +342,7 @@ h3 {
     font-size: 26px;
     opacity: 0.7;
     line-height: 40px;
-    margin: 48px 0 24px 0;
+    margin: 40px 0 18px 0;
 }
 
 h4 {
@@ -351,17 +351,23 @@ h4 {
     font-weight: bold;
     font-size: 20px;
     opacity: 0.6;
+    margin: 0 0 24px 0;
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
     opacity: 0.7;
+    margin-top: 0;
 }
 
 li {
-    font-size: 18px;
+    font-size: 17px;
     opacity: 0.7;
-    line-height: 32px;
+    margin-bottom: 12px;
+}
+
+ul {
+  margin-bottom: 32px;
 }
 
 /* PROJECTS */
@@ -389,33 +395,42 @@ li {
     background-color: #D9EDF2;
 }
 
+.row {
+    display: block;
+    clear: both;
+    margin: 32px 0 16px 0;
+}
+
 .third {
-    width: 33%;
+    width: calc(33.33% - 20px);
     display: inline-block;
     /* background-color: yellow; */
     padding: 0;
     vertical-align: top;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .twothird {
-    width: calc(66.6% - 32px);
+    width: calc(66.66% - 20px);
     display: inline-block;
     /* background-color: orange; */
-    margin: 0 15px 0 15px;
+    margin: 0 0 0 35px;
     vertical-align: top;
 }
 
 .half {
-    width: calc(50% - 32px);
-    float: left;
-    /* background-color: pink; */
-    margin: 0 15px 0 15px;
+    width: calc(50% - 24px);
+    display: inline-block;
+    margin: 0 20px 0 0px;
+    vertical-align: top;
 }
 
 .callout {
     background: #D9EDF2;
-    padding: 4px 20px 4px 20px;
+    padding: 18px 24px 4px 24px;
+    margin: 32px 0 0 0;
+    font-size: 18px;
 }
 
 button {
@@ -433,11 +448,7 @@ button:hover {
     opacity: 0.8;
 }
 
-.row {
-    display: block;
-    clear: both;
-    padding: 24px 0 24px 0;
-}
+
 
 .projectimg {
     width: 100%;
