@@ -13,8 +13,8 @@ $(document).ready(function () {
         "projects" : [{
             "link" : "eaton",
             "image" : "eaton",
-            "title" : "Eaton Dashboard",
-            "description" : "7 month research and development project",
+            "title" : "Eaton Power Management",
+            "description" : "HCI capstone project",
             "dates" : "Jan - Aug 2017"
         }, {
             "link" : "carma",
@@ -38,7 +38,7 @@ $(document).ready(function () {
             "link" : "uresearch",
             "image" : "uresearch",
             "title" : "uResearch",
-            "description" : "Search and collaboration tools for academics",
+            "description" : "Search and collaboration tools for academic researchers",
             "dates" : "Sept - Nov 2016"
         }, {
             "link" : "T1Diabetes",
@@ -79,7 +79,7 @@ $(document).ready(function () {
         }, {
             "link" : "vitals",
             "image" : "vitals",
-            "title" : "VITALS Dedesign",
+            "title" : "VITALS Redesign",
             "description" : "OSU medical student portal for tracking schedule and tasks",
             "dates" : "October 2015"
         }, {
