@@ -34,7 +34,7 @@ a:hover {
 
 /* HEADER */
 header {
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     left: 0;
     top: 0;
@@ -51,24 +51,35 @@ header {
     display: none;
 }
 
+.show {
+    visibility: visible;
+}
+
+.hide {
+    visibility: hidden;
+}
+
 #headerContainerFull {
     width: 100%;
-    max-width: 1044px;
+    max-width: 1024px;
     height: 400px;      /* Needs to match header's height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
+    margin-top: 0px;
     position: relative;
     background-image: imageurl("/");
     overflow: hidden;
 }
 
 #headerContainerCollapsed {
-    width: 1044px;
+    width: 1024px;
     height: 100px;      /* Needs to match header"s height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
     position: fixed;
-    background-color: aliceblue; /*Only here to show what collapsed positioning after js is implemented to change header"s height when we collapse*/
+    background-color: #00bcd4;
+    overflow: hidden;
+    margin-top: -16px;
 }
 
 #iconContainer {
@@ -86,6 +97,12 @@ header {
 #logoContainer {
     position: absolute;
     bottom: 0px;
+}
+
+#collapsedLogoContainer {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 16px;
 }
 
 #logo {
@@ -112,6 +129,14 @@ header {
     right: 0px;
     bottom: 0px;
     margin-bottom: 40px;
+}
+
+#navBarCollapsed {
+    display: inline;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .primaryNav {
@@ -198,8 +223,70 @@ header {
     margin: 0;
 }
 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 160px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    bottom: 32px;
+    right: 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
 @media only screen and (max-width: 1200px){
+    header {
+        height: 300px;
+    }
+    
     #headerContainerFull {
+        width: calc(100% - 128px);
+        height: 300px;
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+    
+    #headerContainerCollapsed {
         width: calc(100% - 128px);
         margin-left: 64px;
         margin-right: 64px;
@@ -249,9 +336,18 @@ header {
     }
 }
 @media only screen and (max-width: 800px){
+    header {
+        height: 250px;
+    }
+    
     #headerContainerFull {
         max-width: 800px;
+        height: 250px;
     }
+    #headerContainerCollapsed{
+        max-width: 800px;
+    }
+    
     .container {
         width: calc(100% - 96px);
         margin-left: 48px;
