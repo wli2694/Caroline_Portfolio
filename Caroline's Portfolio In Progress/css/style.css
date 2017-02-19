@@ -72,14 +72,15 @@ header {
 }
 
 #headerContainerCollapsed {
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     height: 100px;      /* Needs to match header"s height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
     position: fixed;
     background-color: #00bcd4;
     overflow: hidden;
-    margin-top: -16px;
+    margin-top: -72px;
 }
 
 #iconContainer {
@@ -102,7 +103,7 @@ header {
 #collapsedLogoContainer {
     position: absolute;
     bottom: 0px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
 }
 
 #logo {

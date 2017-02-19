@@ -13,11 +13,17 @@ $(document).ready(function () {
     $("nav").append(dropdown)
     $("footer").append(footer)
 
+    var startingWidth = $(window).width();
+
     $(function() {
         $("#headerContainerCollapsed").hide();
         $(".dropdown").hide();
+        if(startingWidth <= 800){
+            $("#navBar").hide();
+            $(".dropdown").show();
+        }
         var collapseHeaderDistance = 400;
-        $(window).scroll(function(){
+        var collapseHeaderFunction = $(window).scroll(function(){
             var scroll = window.pageYOffset || document.documentElement.scrollTop;
             if( scroll >= collapseHeaderDistance){
                 $("#headerContainerCollapsed").show();
@@ -30,16 +36,25 @@ $(document).ready(function () {
 
         $(window).resize(function() {
             var windowwidth = $(window).width();
-            if(windowwidth >= 800){
+            if(windowwidth >= 1200){
+                collapseHeaderDistance = 400;
+                collapseHeaderFunction();
+            } else if(windowwidth >= 800) {
                 $("#sub-logo").show();
                 $("#iconContainer").show();
                 $("#navBar").show();
                 $(".dropdown").hide();
+
+                collapseHeaderDistance = 300;
+                collapseHeaderFunction();
             } else {
                 $("#sub-logo").hide();
                 $("#iconContainer").hide();
                 $("#navBar").hide();
                 $(".dropdown").show();
+
+                collapseHeaderDistance = 250;
+                collapseHeaderFunction();
             }
         })
     })
