@@ -206,6 +206,7 @@ header {
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     margin: 20px 0 8px 0;
+    font-weight: 700;
 }
 
 .imageCaption {
@@ -278,14 +279,14 @@ header {
     header {
         height: 300px;
     }
-    
+
     #headerContainerFull {
         width: calc(100% - 128px);
         height: 300px;
         margin-left: 64px;
         margin-right: 64px;
     }
-    
+
     #headerContainerCollapsed {
         width: calc(100% - 128px);
         margin-left: 64px;
@@ -339,7 +340,7 @@ header {
     header {
         height: 250px;
     }
-    
+
     #headerContainerFull {
         max-width: 800px;
         height: 250px;
@@ -347,7 +348,7 @@ header {
     #headerContainerCollapsed{
         max-width: 800px;
     }
-    
+
     .container {
         width: calc(100% - 96px);
         margin-left: 48px;

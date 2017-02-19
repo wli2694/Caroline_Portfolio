@@ -13,8 +13,8 @@ $(document).ready(function () {
         "projects" : [{
             "link" : "eaton",
             "image" : "eaton",
-            "title" : "Eaton Power Management",
-            "description" : "HCI capstone project to envision the future of interacting with switchgear",
+            "title" : "Eaton Power",
+            "description" : "Envisioning the future of switchgear",
             "dates" : "Jan - Aug 2017"
         }, {
             "link" : "carma",
@@ -24,7 +24,7 @@ $(document).ready(function () {
             "dates" : "Oct - Nov 2016"
         }, {
             "link" : "avmosys",
-            "image" : "avmosys",
+            "image" : "avmosys2",
             "title" : "AVMOSYS",
             "description" : "Mobile app for business aviation management",
             "dates" : "Nov 2015 - Nov 2016"
@@ -38,15 +38,15 @@ $(document).ready(function () {
             "link" : "uresearch",
             "image" : "uresearch",
             "title" : "uResearch",
-            "description" : "Search and collaboration tools for academic researchers",
+            "description" : "Search and collaboration tool for academics",
             "dates" : "Sept - Nov 2016"
         }, {
             "link" : "T1Diabetes",
             "image" : "T1Diabetes",
-            "title" : "Type 1 Diabetes Education",
-            "description" : "Co-participatory design to improve lives of Type 1 diabetes patients",
+            "title" : "T1D Education",
+            "description" : "Co-participatory design for improving lives of Type 1 diabetes patients",
             "dates" : "Jan- May 2016"
-        }, {
+        }, /* {
             "link" : "whatisux",
             "image" : "whatisux",
             "title" : "What is UX Design?",
@@ -56,25 +56,25 @@ $(document).ready(function () {
             "link" : "smartfit",
             "image" : "smartfit",
             "title" : "SmartFit",
-            "description" : "Mixed reality app that serves as a virtual trainer for gym members",
+            "description" : "Mixed reality app and virtual trainer for gym members",
             "dates" : "Nov - Dec 2016"
         }, {
             "link" : "scottychat",
             "image" : "scottychat",
             "title" : "ScottyChat",
-            "description" : "Mobile website that pairs CMU students with alumni mentors",
+            "description" : "Website that pairs CMU students with alumni mentors",
             "dates" : "Sept - Oct 2016"
-        }, {
+        },*/ {
             "link" : "dolcie",
             "image" : "dolcie",
             "title" : "DOLCIE",
-            "description" : "Type 1 Diabetes management app created in OH/IO Hackathon",
+            "description" : "Type 1 Diabetes management app",
             "dates" : "November 2015"
         }, {
             "link" : "VHC",
             "image" : "virtualhealthcoach",
             "title" : "Virtual Health Coach",
-            "description" : "Web app that guides patients in creating and reaching health goals",
+            "description" : "Web app that guides patients in achieving health goals",
             "dates" : "May 2014 - Nov 2015"
         }, {
             "link" : "vitals",
@@ -166,17 +166,17 @@ $(document).ready(function () {
             "link" : "graphicdesign",
             "image" : "graphicdesign",
             "title" : "Graphic Design",
-            "description" : "TODO",
+            "description" : "",
         }, {
             "link" : "animation",
             "image" : "animation",
-            "title" : "2D and 3D Animation",
-            "description" : "TODO",
+            "title" : "2D &amp; 3D Animation",
+            "description" : "",
         }, {
             "link" : "sketches",
             "image" : "sketches",
             "title" : "Sketches and Mixed Media",
-            "description" : "TODO",
+            "description" : "",
         }]
     };
 
