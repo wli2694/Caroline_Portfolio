@@ -251,6 +251,7 @@ header {
     display: inline-block;
     bottom: 32px;
     right: 0;
+    width: 30%;
 }
 
 /* Dropdown Button */
@@ -264,9 +265,10 @@ header {
     font-family: 'Roboto', sans-serif;
     border-radius: 3px;
     box-shadow: none;
-    width: 200px;
+    width: 100%;
     z-index: 2;
     display: inline-block;
+    
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -388,6 +390,10 @@ header {
 @media only screen and (max-width: 450px){
     .projects{
         width: calc(100% - 38px);
+    }
+    
+    .dropdown {
+        width: 100%;
     }
 }
 
