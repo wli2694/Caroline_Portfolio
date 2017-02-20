@@ -4,9 +4,17 @@ $(document).ready(function () {
 
     var collapsedHeader = '<div id="collapsedBackground"><div id = "headerContainerCollapsed"><a href = "index.html"><div id = "collapsedLogoContainer"><h1 id = "logo">Caroline Win</h1></div></a><nav><ul id = "navBarCollapsed"><li class = "primaryNav"><a class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div></div>'
 
-    var footer = '<div id = "backToTopContainer"><div id = "backToTop"><a href = "#">&uarr; Back to Top</a></div></div><div id = "footerContainer"><div id = "footer"><p id = "copyright">© 2017 Caroline Win</p></div></div>'
+    var footer = '<div id = "backToTopContainer"><div id="backToTop"><a href = "#">&uarr; Back to Top</a></div></div><div id = "footerContainer"><div id = "footer"><p id = "copyright">© 2017 Caroline Win</p></div></div>'
 
-    var dropdown = '<div class="dropdown"><button class="dropbtn">Menu</button><div class="dropdown-content"><a href="#">Portfolio</a><a href="#">Resume</a><a href="#">About</a><a href="#">Contanct</a></div></div>'
+    var dropdown = '<div class="dropdown">' +
+        '<button class="dropbtn">MENU</button>' +
+        '<div class="dropdown-content">' +
+            '<a href="#">PORTFOLIO</a>' +
+            '<a href="#">RESUME</a>' +
+            '<a href="#">ABOUT</a>' +
+            '<a href="#">CONTACT</a>' +
+        '</div>' +
+    '</div>'
 
     $("header").append(fullHeader)
     $("header").append(collapsedHeader)
@@ -44,7 +52,7 @@ $(document).ready(function () {
                 $("#navBar").show();
                 $("#navBarCollapsed").show();
                 $(".dropdown").hide();
-                
+
                 collapseHeaderDistance = 400;
                 collapseHeaderFunction();
             } else if(windowwidth >= 800) {
@@ -67,7 +75,7 @@ $(document).ready(function () {
                 collapseHeaderFunction();
             }
         });
-        
+
         if(startingWidth >= 1200){
             collapseHeaderDistance = 400;
             collapseHeaderFunction();
@@ -91,4 +99,23 @@ $(document).ready(function () {
             collapseHeaderFunction();
         }
     })
+
+    $('#backToTop').click(function() {
+        $('html, body').animate({scrollTop : 0}, 800);
+        return false;
+    });
+
+    if(window.location.href === '../resume.html') {
+
+    }
+    else if(window.location.href === '../about.html') {
+
+    }
+    else if(window.location.href === '../contact.html') {
+
+    }
+    else {
+
+    }
+
 })
