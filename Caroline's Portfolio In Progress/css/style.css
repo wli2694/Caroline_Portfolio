@@ -11,11 +11,12 @@ a {
     text-decoration: none;
     margin: 24px 0 24px 0;
     line-height: 20px;
+    transition: opacity 0.3s;
 }
 
-a:hover {
+/* a:hover {
     opacity: 0.6;
-}
+} */
 
 #designWorkBackground img {
     max-height: 83%;
@@ -142,17 +143,18 @@ header {
 
 .primaryNav {
     display: inline;
-    margin-left: 24px;
+    margin: 0 0 0 24px;
     float: right;
     opacity: 1.0;
 }
 
 .primaryNavItems {
     color: white;
+    transition: font-size 0.3s;
 }
 
 .primaryNavItems:hover {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     opacity: 1.0;
 }
@@ -196,10 +198,11 @@ header {
     margin-right: 38px;
     margin-bottom: 30px;
     overflow: auto;
+    transition: opacity 0.6s;
 }
 
 .projects:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .projectTitle {
