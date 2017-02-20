@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    var fullHeader = '<div id = "headerContainerFull"><div id = "iconContainer"><a href = "#"><img class = "iconsHeader" src="images/twitter.svg"></a><a href = "#"><img class = "iconsHeader" src="images/linkedin.svg"></a><a href = "#"><img class = "iconsHeader" src="images/instagram.svg"></a></div><div id = "logoContainer"><a href = "index.html"><div><p id = "logo">Caroline Win</p><p id = "sub-logo">UX &#38; INTERACTION DESIGNER</p></div></a></div><nav><ul id = "navBar"> <!-- nav items need to be in backwards order due to have right set to 0px; --><li class = "primaryNav"><a class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div>'
+    var fullHeader = '<div id = "headerContainerFull"><div id = "iconContainer"><a href = "#"><img class = "iconsHeader" src="images/twitter.svg"></a><a href = "#"><img class = "iconsHeader" src="images/linkedin.svg"></a><a href = "#"><img class = "iconsHeader" src="images/instagram.svg"></a></div><div id = "logoContainer"><a href = "index.html"><div><h1 id = "logo">Caroline Win</h1><h2 id = "sub-logo">UX &#38; INTERACTION DESIGNER</h2></div></a></div><nav><ul id = "navBar"> <!-- nav items need to be in backwards order due to have right set to 0px; --><li class = "primaryNav"><a class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div>'
 
-    var collapsedHeader = '<div id="headerwords"><div id="logo"><a href="index.html"></a></div><ul id="navtop"></ul></div><div id = "headerContainerCollapsed"><a href = "index.html"><div id = "collapsedLogoContainer"><h1 id = "logo"><p id = "logo">Caroline Win</p></h1></div></a><nav><ul id = "navBarCollapsed"><li class = "primaryNav"><a class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav>'
+    var collapsedHeader = '<div id="collapsedBackground"><div id = "headerContainerCollapsed"><a href = "index.html"><div id = "collapsedLogoContainer"><h1 id = "logo">Caroline Win</h1></div></a><nav><ul id = "navBarCollapsed"><li class = "primaryNav"><a class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div></div>'
 
     var footer = '<div id = "backToTopContainer"><div id = "backToTop"><a href = "#">&uarr; Back to Top</a></div></div><div id = "footerContainer"><div id = "footer"><p id = "copyright">© 2017 Caroline Win</p></div></div>'
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
     var startingWidth = $(window).width();
 
     $(function() {
-        $("#headerContainerCollapsed").hide();
+        $("#collapsedBackground").hide();
         $(".dropdown").hide();
         if(startingWidth <= 800){
             $("#navBar").hide();
@@ -26,23 +26,32 @@ $(document).ready(function () {
         var collapseHeaderFunction = $(window).scroll(function(){
             var scroll = window.pageYOffset || document.documentElement.scrollTop;
             if( scroll >= collapseHeaderDistance){
-                $("#headerContainerCollapsed").show();
+                $("#collapsedBackground").show();
                 $("#headerContainerFull").hide();
             } else {
-                $("#headerContainerCollapsed").hide();
+                $("#collapsedBackground").hide();
                 $("#headerContainerFull").show();
             }
         })
 
-        $(window).resize(function() {
+
+        $(window).bind('resize', function() {
             var windowwidth = $(window).width();
+            console.log(windowwidth);
             if(windowwidth >= 1200){
+                $("#sub-logo").show();
+                $("#iconContainer").show();
+                $("#navBar").show();
+                $("#navBarCollapsed").show();
+                $(".dropdown").hide();
+                
                 collapseHeaderDistance = 400;
                 collapseHeaderFunction();
             } else if(windowwidth >= 800) {
                 $("#sub-logo").show();
                 $("#iconContainer").show();
                 $("#navBar").show();
+                $("#navBarCollapsed").show();
                 $(".dropdown").hide();
 
                 collapseHeaderDistance = 300;
@@ -51,11 +60,35 @@ $(document).ready(function () {
                 $("#sub-logo").hide();
                 $("#iconContainer").hide();
                 $("#navBar").hide();
+                $("#navBarCollapsed").hide();
                 $(".dropdown").show();
 
                 collapseHeaderDistance = 250;
                 collapseHeaderFunction();
             }
-        })
+        });
+        
+        if(startingWidth >= 1200){
+            collapseHeaderDistance = 400;
+            collapseHeaderFunction();
+        } else if(startingWidth >= 800) {
+            $("#sub-logo").show();
+            $("#iconContainer").show();
+            $("#navBar").show();
+            $("#navBarCollapsed").show();
+            $(".dropdown").hide();
+
+            collapseHeaderDistance = 300;
+            collapseHeaderFunction();
+        } else {
+            $("#sub-logo").hide();
+            $("#iconContainer").hide();
+            $("#navBar").hide();
+            $("#navBarCollapsed").hide();
+            $(".dropdown").show();
+
+            collapseHeaderDistance = 250;
+            collapseHeaderFunction();
+        }
     })
 })
