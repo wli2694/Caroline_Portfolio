@@ -15,7 +15,7 @@ a {
 }
 
 /* a:hover {
-    opacity: 0.6;
+opacity: 0.6;
 } */
 
 #designWorkBackground img {
@@ -165,6 +165,12 @@ header {
 }
 
 .primaryNavItems:hover {
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 1.0;
+}
+
+.highlight {
     font-size: 22px;
     font-weight: bold;
     opacity: 1.0;
@@ -485,7 +491,7 @@ li {
 }
 
 ul {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 /* PROJECTS */
