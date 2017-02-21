@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var fullHeader = '<div id = "headerContainerFull"><div id = "iconContainer"><a href = "#"><img class = "iconsHeader" src="images/twitter.svg"></a><a href = "#"><img class = "iconsHeader" src="images/linkedin.svg"></a><a href = "#"><img class = "iconsHeader" src="images/instagram.svg"></a></div><div id = "logoContainer"><a href = "index.html"><div><h1 id = "logo">Caroline Win</h1><h2 id = "sub-logo">UX &#38; INTERACTION DESIGNER</h2></div></a></div><nav><ul id = "navBar"> <!-- nav items need to be in backwards order due to have right set to 0px; --><li class = "primaryNav"><a id = "contactNav" class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a id = "aboutNav" class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a id = "resumeNav" class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a id = "portfolioNav" class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div>'
 
-    var collapsedHeader = '<div id="collapsedBackground"><div id = "headerContainerCollapsed"><a href = "index.html"><div id = "collapsedLogoContainer"><h1 id = "logo">Caroline Win</h1></div></a><nav><ul id = "navBarCollapsed"><li class = "primaryNav"><a id = "contactNavC" class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a id = "aboutNavC" class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a id = "resumeNavC" class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a id = "portfolioNavC" class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div></div>'
+    var collapsedHeader = '<div id="collapsedBackground"><div id = "headerContainerCollapsed"><a href = "index.html"><div id = "collapsedLogoContainer"><h1 id = "logo">Caroline Win</h1></div></a><nav><ul id = "navBarCollapsed"><li class = "primaryNav"><a id = "contactNavC" class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a id = "aboutNavC" class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a id = "resumeNavC" class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a id = "portfolioNavC" class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div></div><div id="drop2"></div>'
 
     var footer = '<div id = "backToTopContainer"><div id="backToTop"><a href = "#">&uarr; Back to Top</a></div></div><div id = "footerContainer"><div id = "footer"><p id = "copyright">© 2017 Caroline Win</p></div></div>'
 
@@ -16,9 +16,11 @@ $(document).ready(function () {
         '</div>' +
         '</div>'
 
+
     $("header").append(fullHeader)
     $("header").append(collapsedHeader)
-    $("nav").append(dropdown)
+    $("#drop").append(dropdown)
+//    $("#drop2").append(dropdown)
     $("footer").append(footer)
 
     var startingWidth = $(window).width();
@@ -33,12 +35,24 @@ $(document).ready(function () {
         var collapseHeaderDistance = 400;
         var collapseHeaderFunction = $(window).scroll(function(){
             var scroll = window.pageYOffset || document.documentElement.scrollTop;
+            /*Collapse Header*/
             if( scroll >= collapseHeaderDistance){
                 $("#collapsedBackground").show();
                 $("#headerContainerFull").hide();
+                
+                if(collapseHeaderDistance <= 250){
+                    $("#drop").css({"position":"fixed", "width":"30%","height":"100px", "right":"0px", "top":"15px"});
+                    $(".dropdown").css("width","100%");
+                }
+            /*Full Header*/
             } else {
                 $("#collapsedBackground").hide();
                 $("#headerContainerFull").show();
+                
+                if(collapseHeaderDistance <=250){
+                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                    $(".dropdown").css("width","30%");
+                }
             }
         })
 
@@ -104,7 +118,7 @@ $(document).ready(function () {
         return false;
     });
 
-    
+
     if($(this).attr('title') == 'Caroline Win | Resume') {
         $("#resumeNav").addClass("highlight");
         $("#resumeNavC").addClass("highlight");
@@ -122,7 +136,7 @@ $(document).ready(function () {
         $("#portfolioNav").removeClass("highlight");
         $("#contactNav").removeClass("highlight");
         $("#resumeNav").removeClass("highlight");
-         $("#portfolioNavC").removeClass("highlight");
+        $("#portfolioNavC").removeClass("highlight");
         $("#contactNavC").removeClass("highlight");
         $("#resumeNavC").removeClass("highlight");
     }

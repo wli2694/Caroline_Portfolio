@@ -268,7 +268,8 @@ header {
     width: 100%;
     z-index: 2;
     display: inline-block;
-    
+    text-align: center;
+
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -278,7 +279,7 @@ header {
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
-    width: 200px;
+    width: 100%;
 }
 
 /* Links inside the dropdown */
@@ -290,7 +291,9 @@ header {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -390,10 +393,6 @@ header {
 @media only screen and (max-width: 450px){
     .projects{
         width: calc(100% - 38px);
-    }
-    
-    .dropdown {
-        width: 100%;
     }
 }
 
@@ -673,4 +672,9 @@ textarea {
     background-color:#FFFFFF;
     width: 100%;
     overflow: auto;
+}
+
+#drop {
+    position: relative;
+    z-index: 1000;
 }
