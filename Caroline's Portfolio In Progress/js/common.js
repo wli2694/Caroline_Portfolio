@@ -20,17 +20,28 @@ $(document).ready(function () {
     $("header").append(fullHeader)
     $("header").append(collapsedHeader)
     $("#drop").append(dropdown)
-//    $("#drop2").append(dropdown)
+    //    $("#drop2").append(dropdown)
     $("footer").append(footer)
 
     var startingWidth = $(window).width();
 
+    //Veritcal Responsiveness
     $(function() {
         $("#collapsedBackground").hide();
         $(".dropdown").hide();
         if(startingWidth <= 800){
             $("#navBar").hide();
             $(".dropdown").show();
+
+            if($(window).width() < 450){
+                $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                $(".dropdown").css("width","100%");
+                $("#logoContainer").css({"bottom":"50%"});
+            } else {
+                $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                $(".dropdown").css("width","30%");
+                $("#logoContainer").css({"bottom":"0"});
+            }
         }
         var collapseHeaderDistance = 400;
         var collapseHeaderFunction = $(window).scroll(function(){
@@ -39,27 +50,33 @@ $(document).ready(function () {
             if( scroll >= collapseHeaderDistance){
                 $("#collapsedBackground").show();
                 $("#headerContainerFull").hide();
-                
+
+                //if width is <= 800
                 if(collapseHeaderDistance <= 250){
                     $("#drop").css({"position":"fixed", "width":"30%","height":"100px", "right":"0px", "top":"15px"});
                     $(".dropdown").css("width","100%");
                 }
-            /*Full Header*/
+                /*Full Header*/
             } else {
                 $("#collapsedBackground").hide();
                 $("#headerContainerFull").show();
-                
+
                 if(collapseHeaderDistance <=250){
-                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
-                    $(".dropdown").css("width","30%");
+                    if($(window).width() < 450){
+                        $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                        $(".dropdown").css("width","100%");
+                    } else {
+                        $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                        $(".dropdown").css("width","30%");
+                    }
                 }
             }
         })
 
-
+        //Horizontal Responsiveness
         $(window).bind('resize', function() {
             var windowwidth = $(window).width();
-            if(windowwidth >= 1200){
+            if(windowwidth > 1200){
                 $("#sub-logo").show();
                 $("#iconContainer").show();
                 $("#navBar").show();
@@ -68,7 +85,7 @@ $(document).ready(function () {
 
                 collapseHeaderDistance = 400;
                 collapseHeaderFunction();
-            } else if(windowwidth >= 800) {
+            } else if(windowwidth > 800) {
                 $("#sub-logo").show();
                 $("#iconContainer").show();
                 $("#navBar").show();
@@ -84,6 +101,20 @@ $(document).ready(function () {
                 $("#navBarCollapsed").hide();
                 $(".dropdown").show();
 
+                if(windowwidth < 450){
+                    if((window.pageYOffset || document.documentElement.scrollTop) < 250){
+                        $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                        $(".dropdown").css("width","100%");
+                        $("#logoContainer").css({"bottom":"50%"});
+                    } else {
+                        
+                    }
+                } else{
+                    //450 < Width < 800 Collapsed
+                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                    $(".dropdown").css("width","30%");
+                    $("#logoContainer").css({"bottom":"0"});
+                }
                 collapseHeaderDistance = 250;
                 collapseHeaderFunction();
             }
