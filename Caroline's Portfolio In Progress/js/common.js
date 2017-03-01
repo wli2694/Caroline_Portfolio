@@ -25,7 +25,8 @@ $(document).ready(function () {
 
     var startingWidth = $(window).width();
 
-    //Veritcal Responsiveness
+    //Vertical Responsiveness
+    //Starting screen
     $(function() {
         $("#collapsedBackground").hide();
         $(".dropdown").hide();
@@ -34,26 +35,37 @@ $(document).ready(function () {
             $(".dropdown").show();
 
             if($(window).width() < 450){
-                $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
-                $(".dropdown").css("width","100%");
-                $("#logoContainer").css({"bottom":"50%"});
+                //collapsed Header
+                if((window.pageYOffset || document.documentElement.scrollTop) >= 250){
+                    $("#collapsedLogoContainer").hide();
+                    $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"15px"});
+                    $(".dropdown").css("width","100%");
+                } else{ //full Header
+                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                    $(".dropdown").css("width","100%");
+                    $("#logoContainer").css({"bottom":"50%"});
+                }
             } else {
                 $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
                 $(".dropdown").css("width","30%");
                 $("#logoContainer").css({"bottom":"0"});
             }
         }
+        //default distance...viewport >= 1200
         var collapseHeaderDistance = 400;
+
+        //Vertical Responsiveness while scrolling
         var collapseHeaderFunction = $(window).scroll(function(){
             var scroll = window.pageYOffset || document.documentElement.scrollTop;
             /*Collapse Header*/
             if( scroll >= collapseHeaderDistance){
                 $("#collapsedBackground").show();
                 $("#headerContainerFull").hide();
-
-                //if width is <= 800
-                if(collapseHeaderDistance <= 250){
-                    $("#drop").css({"position":"fixed", "width":"30%","height":"100px", "right":"0px", "top":"15px"});
+                
+                //full width dropdown
+                if($(window).width < 450){
+                    $("#collapsedLogoContainer").hide();
+                    $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"15px"});
                     $(".dropdown").css("width","100%");
                 }
                 /*Full Header*/
@@ -107,7 +119,10 @@ $(document).ready(function () {
                         $(".dropdown").css("width","100%");
                         $("#logoContainer").css({"bottom":"50%"});
                     } else {
-                        
+                        //full width dropdown
+                        $("#collapsedLogoContainer").hide();
+                        $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"10px"});
+                        $(".dropdown").css("width","100%");
                     }
                 } else{
                     //450 < Width < 800 Collapsed
@@ -120,6 +135,7 @@ $(document).ready(function () {
             }
         });
 
+        //on loading, different viewport sizes
         if(startingWidth >= 1200){
             collapseHeaderDistance = 400;
             collapseHeaderFunction();
@@ -150,6 +166,7 @@ $(document).ready(function () {
     });
 
 
+    //Highlighting navigation
     if($(this).attr('title') == 'Caroline Win | Resume') {
         $("#resumeNav").addClass("highlight");
         $("#resumeNavC").addClass("highlight");
