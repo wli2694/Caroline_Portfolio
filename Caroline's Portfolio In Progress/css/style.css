@@ -195,14 +195,14 @@ header {
     font-family: "Roboto", "sans-serif";
     color: black;
     opacity: 0.3;
-    margin: 0 0 24px 0;
+    margin: 0 0 24px 16px;
 }
 .container {
     /*    background-color: blue;*/ /*can turn on if need to see*/
     max-width: 1055px;
     width: 100%;
-    margin-left: calc(50% - 512px);
-    margin-right: calc(50% - 543px);
+    margin-left: calc(50% - 527.5px);
+    margin-right: calc(50% - 527.5px);
     padding-top: 72px;
     padding-bottom: 72px;
     overflow: auto;
@@ -210,9 +210,10 @@ header {
 
 .projects{
     /*    background-color: green;*/
-    width: calc(33.33% - 38px);
+    width: calc(33.33% - 32px);
     float: left;
-    margin-right: 38px;
+    margin-right: 16px;
+    margin-left: 16px;
     margin-bottom: 30px;
     overflow: auto;
     transition: opacity 0.6s;
@@ -325,9 +326,9 @@ header {
         margin-right: 64px;
     }
     .container {
-        width: calc(100% - 128px);
-        margin-left: 64px;
-        margin-right: 64px;
+        width: calc(100% - 96px);
+        margin-left: 48px;
+        margin-right: 48px;
     }
 
     /*SMALL Text Styling*/
@@ -387,12 +388,14 @@ header {
         margin-right: 48px;
     }
     .projects{
-        width: calc(50% - 38px);
+        width: calc(50% - 32px);
     }
 }
 @media only screen and (max-width: 450px){
     .projects{
-        width: calc(100% - 38px);
+        width: calc(100% - 32px);
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
@@ -677,4 +680,5 @@ textarea {
 #drop {
     position: relative;
     z-index: 1000;
+    margin-right: 64px;
 }
