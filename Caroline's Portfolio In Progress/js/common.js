@@ -19,8 +19,10 @@ $(document).ready(function () {
 
     $("header").append(fullHeader)
     $("header").append(collapsedHeader)
+    $("header").after("<div id='drop'></div>")
     $("#drop").append(dropdown)
     $("footer").append(footer)
+    
 
 
     //Vertical Responsiveness
