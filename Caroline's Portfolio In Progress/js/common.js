@@ -9,10 +9,10 @@ $(document).ready(function () {
     var dropdown = '<div class="dropdown">' +
         '<button class="dropbtn">MENU</button>' +
         '<div class="dropdown-content">' +
-        '<a href="#">PORTFOLIO</a>' +
-        '<a href="#">RESUME</a>' +
-        '<a href="#">ABOUT</a>' +
-        '<a href="#">CONTACT</a>' +
+        '<a href="../index.html">PORTFOLIO</a>' +
+        '<a href="../resume.html">RESUME</a>' +
+        '<a href="../about.html">ABOUT</a>' +
+        '<a href="../contact.html">CONTACT</a>' +
         '</div>' +
         '</div>'
 
