@@ -120,20 +120,22 @@ header {
 
 #logo {
     font-family: "Lobster Two", sans-serif;
-    font-size: 60px;
+    font-size: 54px;
     color: white;
     opacity: 1.0;
     display: inline;
+    font-weight: 400;
 }
 
 #sub-logo {
     font-family: "Roboto", "sans-serif";
-    font-size: 24;
+    font-size: 26px;
     color: white;
     opacity: 1.0;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 40px;
     letter-spacing: 0.3px;
+    font-weight: 400;
 }
 
 #navBar {
@@ -171,9 +173,13 @@ header {
 }
 
 .highlight {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     opacity: 1.0;
+}
+
+.highlight:hover {
+  font-size: 28px;
 }
 
 /* MAIN */
@@ -337,13 +343,27 @@ header {
     }
     #logo {
         font-size: 36px;
+        line-height: 36px;
+
     }
     #sub-logo {
         font-size: 16px;
+        padding-top: 0;
+        margin-top: 10px;
+        line-height: 16px;
     }
     .primaryNavItems:hover {
         font-size: 18px;
     }
+
+    .highlight {
+        font-size: 22px;
+    }
+
+    .highlight:hover {
+      font-size: 24px;
+    }
+
     h1 {
         font-size: 46px;
     }
