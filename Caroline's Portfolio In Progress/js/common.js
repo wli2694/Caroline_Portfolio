@@ -36,14 +36,15 @@ $(document).ready(function () {
             $("#navBar").hide();
             $(".dropdown").show();
 
+            //phone view
             if($(window).width() < 450){
                 //collapsed Header
                 if((window.pageYOffset || document.documentElement.scrollTop) >= 250){
                     $("#collapsedLogoContainer").hide();
-                    $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"15px"});
+                    $("#drop").css({"position":"fixed", "width":"calc(100% - 128px)","height":"100px", "right":"0px", "top":"15px", "margin-right":"64px", "margin-left":"64px"});
                     $(".dropdown").css("width","100%");
                 } else{ //full Header
-                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":"", "margin-right":"64px", "margin-left":"64px"});
                     $(".dropdown").css("width","100%");
                     $("#logoContainer").css({"bottom":"50%"});
                 }
@@ -67,7 +68,7 @@ $(document).ready(function () {
                 //full width dropdown
                 if($(window).width() < 450){
                     $("#collapsedLogoContainer").hide();
-                    $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"9px", "margin-right":"0px"});
+                    $("#drop").css({"position":"fixed", "width":"calc(100% - 128px)","height":"100px", "right":"0px", "top":"9px"});
                     $(".dropdown").css("width","100%");
                     $(".projects").css("width","calc(100% - 32px)");
                 } else if($(window).width() <800) {
@@ -79,7 +80,7 @@ $(document).ready(function () {
                 $("#collapsedBackground").hide();
                 $("#headerContainerFull").show();
                 if($(window).width() < 450){
-                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":"", "margin-right":"0px"});
+                    $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
                     $(".dropdown").css("width","100%");
                     $(".projects").css("width","calc(100% - 32px)");
                 } else {
@@ -121,14 +122,16 @@ $(document).ready(function () {
                 if(windowwidth < 450){
                     $("#logoContainer").css("width", "100%");
                     $("#logo").css({"display":"", "text-align":"center"});
+                    
+                    //full header with dropdown
                     if((window.pageYOffset || document.documentElement.scrollTop) < 250){
-                        $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
+                        $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":"", "margin-right":"64px", "margin-left":"64px"});
                         $(".dropdown").css("width","100%");
                         $("#logoContainer").css({"bottom":"50%"});
                     } else {
-                        //full width dropdown
+                        //collapsed width dropdown
                         $("#collapsedLogoContainer").hide();
-                        $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"10px"});
+                        $("#drop").css({"position":"fixed", "width":"calc(100% - 128px)","height":"100px", "right":"0px", "top":"10px", "margin-right":"64px", "margin-left":"64px"});
                         $(".dropdown").css("width","100%");
                     }
                 } else{
@@ -166,7 +169,7 @@ $(document).ready(function () {
                 $("#logoContainer").css("width", "100%");
                 $("#logo").css({"display":"block", "text-align":"center"});
                 $(".projects").css("width","calc(100% - 32px)")
-                $("#drop").css("margin-right","0px")
+                $("#drop").css({"margin-right":"64px", "margin-left":"64px"})
             } else {
                 $("#logoContainer").css("bottom","32px");
             }
