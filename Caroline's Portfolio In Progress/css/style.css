@@ -496,8 +496,10 @@ header {
 #copyright {
     color: white;
     margin-top: 0;
+    padding-top: 2px;
     text-align: center;
-    opacity: 1.0;
+    opacity: 0.9;
+    font-size: 12px;
 }
 
 /* TYPOGRAPHY */

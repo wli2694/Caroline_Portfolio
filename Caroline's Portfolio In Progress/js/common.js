@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     var collapsedHeader = '<div id="collapsedBackground"><div id = "headerContainerCollapsed"><a href = "index.html"><div id = "collapsedLogoContainer"><h1 id = "logo">Caroline Win</h1></div></a><nav><ul id = "navBarCollapsed"><li class = "primaryNav"><a id = "contactNavC" class = "primaryNavItems" href = "contact.html"> CONTACT</a></li><li class = "primaryNav"><a id = "aboutNavC" class = "primaryNavItems" href = "about.html"> ABOUT </a></li><li class = "primaryNav"><a id = "resumeNavC" class = "primaryNavItems" href = "resume.html"> RESUME </a></li><li class = "primaryNav"><a id = "portfolioNavC" class = "primaryNavItems" href = "index.html"> PORTFOLIO </a></li></ul></nav></div></div>'
 
-    var footer = '<div id = "backToTopContainer"><div id="backToTop"><a href = "#">&uarr; Back to Top</a></div></div><div id = "footerContainer"><div id = "footer"><p id = "copyright">© 2017 Caroline Win</p></div></div>'
+    var footer = '<div id = "backToTopContainer"><div id="backToTop"><a href = "#">&uarr; Back to Top</a></div></div><div id = "footerContainer"><div id = "footer"><p id = "copyright"> © 2017 Designed by Caroline Win   |   Developed by William Li</p></div></div>'
 
     var dropdown = '<div class="dropdown">' +
         '<button class="dropbtn">MENU</button>' +
@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("header").after("<div id='drop'></div>")
     $("#drop").append(dropdown)
     $("footer").append(footer)
-    
+
 
 
     //Vertical Responsiveness
