@@ -40,7 +40,7 @@ header {
     left: 0;
     top: 0;
     z-index: 1;
-    height: 400px;
+    height: 360px;
     width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     background: url("../images/header_waves.svg") #00bcd4 no-repeat left top; /* Image isnt showing.*/
@@ -63,7 +63,7 @@ header {
 #headerContainerFull {
     width: 100%;
     max-width: 1024px;
-    height: 400px;      /* Needs to match header's height*/
+    height: 360px;      /* Needs to match header's height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
     margin-top: 0px;
@@ -74,7 +74,7 @@ header {
 
 #collapsedBackground {
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     background-color: #00bcd4;
 }
@@ -82,7 +82,7 @@ header {
 #headerContainerCollapsed {
     width: 100%;
     max-width: 1024px;
-    height: 100px;      /* Needs to match header"s height*/
+    height: 80px;      /* Needs to match header"s height*/
     margin-left: calc(50% - 512px);
     margin-right: calc(50% - 543px);
     position: fixed;
@@ -115,7 +115,7 @@ header {
 #collapsedLogoContainer {
     position: absolute;
     bottom: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 #logo {
@@ -151,7 +151,7 @@ header {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    margin-bottom: 34px;
+    margin-bottom: 24px;
 }
 
 .primaryNav {
@@ -210,7 +210,7 @@ header {
     margin-left: calc(50% - 527.5px);
     margin-right: calc(50% - 527.5px);
     padding-top: 54px;
-    padding-bottom: 72px;
+    padding-bottom: 48px;
     overflow: auto;
 }
 
@@ -640,12 +640,12 @@ textarea {
 
 @media only screen and (max-width: 1200px){
     header {
-        height: 300px;
+        height: 280px;
     }
 
     #headerContainerFull {
         width: calc(100% - 128px);
-        height: 300px;
+        height: 280px;
         margin-left: 64px;
         margin-right: 64px;
     }
@@ -660,6 +660,7 @@ textarea {
         margin-left: 48px;
         margin-right: 48px;
         padding-top: 46px;
+        padding-bottom: 32px;
     }
 
     .artimg{
@@ -709,13 +710,14 @@ textarea {
         font-size: 24px;
     }
     .projectTitle {
-        font-size: 20px;
+        font-size: 22px;
     }
     .descText {
         font-size: 14px;
     }
     .imageCaption {
         font-size: 12px;
+        margin-top: 10px;
     }
 
     #backToTop {
@@ -726,12 +728,12 @@ textarea {
 }
 @media only screen and (max-width: 800px){
     header {
-        height: 250px;
+        height: 230px;
     }
 
     #headerContainerFull {
         max-width: 800px;
-        height: 250px;
+        height: 230px;
         width: calc(100% - 96px);
         margin-left: 48px;
         margin-right: 48px;
@@ -746,6 +748,12 @@ textarea {
         margin-right: 32px;
         padding-top: 40px;
     }
+
+    #logo {
+      font-size: 44px;
+      line-height: 44px;
+    }
+
     .projects{
         width: calc(50% - 32px);
     }
@@ -772,6 +780,11 @@ textarea {
     }
 }
 @media only screen and (max-width: 450px){
+    #logo {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
     .projects{
         width: calc(100% - 32px);
         margin-left: 16px;
@@ -793,6 +806,10 @@ textarea {
     .half {
       width: 100%;
       margin-right: 0;
+    }
+
+    .dropdown {
+      bottom: 32px;
     }
 
     .dropbtn {

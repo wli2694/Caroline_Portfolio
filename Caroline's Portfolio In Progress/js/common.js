@@ -46,7 +46,7 @@ $(document).ready(function () {
                 } else{ //full Header
                     $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":"", "margin-right":"64px", "margin-left":"64px"});
                     $(".dropdown").css("width","100%");
-                    $("#logoContainer").css({"bottom":"50%"});
+                    $("#logoContainer").css({"bottom":"45%"});
                 }
             } else {
                 $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":""});
@@ -68,12 +68,12 @@ $(document).ready(function () {
                 //full width dropdown
                 if($(window).width() < 450){
                     $("#collapsedLogoContainer").hide();
-                    $("#drop").css({"position":"fixed", "width":"calc(100% - 128px)","height":"100px", "right":"0px", "top":"9px"});
+                    $("#drop").css({"position":"fixed", "width":"calc(100% - 128px)","height":"100px", "right":"0px", "top":"0"});
                     $(".dropdown").css("width","100%");
                     $(".projects").css("width","calc(100% - 32px)");
                 } else if($(window).width() <800) {
-                    $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"9px"});
-                    $("#collapsedLogoContainer").css("top", "24px");
+                    $("#drop").css({"position":"fixed", "width":"100%","height":"100px", "right":"0px", "top":"0"});
+                    $("#collapsedLogoContainer").css("top", "20px");
                 }
                 /*Full Header*/
             } else {
@@ -122,12 +122,12 @@ $(document).ready(function () {
                 if(windowwidth < 450){
                     $("#logoContainer").css("width", "100%");
                     $("#logo").css({"display":"", "text-align":"center"});
-                    
+
                     //full header with dropdown
                     if((window.pageYOffset || document.documentElement.scrollTop) < 250){
                         $("#drop").css({"position":"relative", "width":"","height":"", "right":"", "top":"", "margin-right":"64px", "margin-left":"64px"});
                         $(".dropdown").css("width","100%");
-                        $("#logoContainer").css({"bottom":"50%"});
+                        $("#logoContainer").css({"bottom":"45%"});
                     } else {
                         //collapsed width dropdown
                         $("#collapsedLogoContainer").hide();
